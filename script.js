@@ -10,6 +10,8 @@ async function getZelda() {
 
   //   console.log(weaponsArr.length);
 
+  document.querySelector(".zelda-data").classList.remove("hidden");
+
   let randomWeaponNum = Math.floor(Math.random() * weaponsArrLength);
 
   console.log("this is random num", randomWeaponNum);
@@ -29,3 +31,4 @@ async function getZelda() {
   document.querySelector(".attack").innerText = attackPoints;
   document.querySelector(".desc").innerText = descWeapon;
 }
+document.querySelector(".zelda-data").classList.add("hidden");
