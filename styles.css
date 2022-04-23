@@ -1,6 +1,27 @@
+@font-face {
+  font-family: "hylia_serif_betaregular";
+  src: url("./webfontkit-20220422-185555/hyliaserifbeta-regular-webfont.woff")
+      format("woff2"),
+    url("/webfontkit-20220422-185555/hyliaserifbeta-regular-webfont.woff2")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "the_wild_breath_of_zeldaRg";
+  src: url("./webfontkit-20220422-194206/the_wild_breath_of_zelda-webfont.woff2")
+      format("woff2"),
+    url("./webfontkit-20220422-194206/the_wild_breath_of_zelda-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-family: "the_wild_breath_of_zeldaRg";
 }
 body {
   display: flex;
@@ -10,6 +31,11 @@ body {
   background-image: url(https://wallpaperaccess.com/full/397388.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.zelda-card > h1 {
+  font-family: "hylia_serif_betaregular";
+  font-size: 55px;
+  color: #fff;
 }
 .zelda-card {
   display: flex;
@@ -21,6 +47,7 @@ body {
   /* border: solid pink; */
   width: 100%;
   height: 100vh;
+  margin: 10px 10px;
 }
 .zelda-data {
   display: flex;
@@ -29,10 +56,24 @@ body {
   flex-direction: column;
   backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.178);
-  max-width: 50%;
+  max-width: auto;
   width: 70%;
   min-height: 70%;
 }
+.zelda-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  color: #fff;
+  font-size: 1rem;
+  margin: 10px;
+}
+.name {
+  font-size: 2rem;
+}
+
 figure {
   display: flex;
   justify-content: center;
@@ -41,6 +82,7 @@ figure {
 }
 button {
   padding: 0.5em 1.5em;
+  font-family: "hylia_serif_betaregular";
   font-size: 1.5rem;
   font-style: italic;
   color: white;
